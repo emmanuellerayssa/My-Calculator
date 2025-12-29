@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>My calculator</h1>
+    <div class="container">
+        <fieldset>
+        <legend>Result</legend>
+            
+                <label> Number 1</label>
+                <div class = "specialarea" name="firstnumber" id="firstnumber"></div>
+                <label> Operation</label>
+                <div class = "specialarea" name="operation" id="operation"></div>
+                <label> Number 2</label>
+                <div  class = "specialarea" name="secondnumber" id="secondnumber"></div>
+                <label> Result</label>
+                <div class = "specialarea" name="result" id="result" style="background-color:  rgb(228, 60, 88); color: white; text-align: center;"></div>
+        </fieldset> 
+    </div>
+    <script>
+        // Read the query parameters
+        const params = new URLSearchParams(window.location.search);
+        // Get the value of the different parameters
+        const firstnumber = params.get('firstnumber');
+        const secondnumber = params.get('secondnumber');
+        const operation = params.get('operation');
+        const result = params.get('result');
+        // Insert it into the div elements
+        document.getElementById('firstnumber').textContent = firstnumber;
+        document.getElementById('secondnumber').textContent = secondnumber;
+        document.getElementById('operation').textContent = operation;
+        document.getElementById('result').textContent = result;
+    </script>
+</body>
+</html>

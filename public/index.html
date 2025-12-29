@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>My calculator</h1>
+    <form action="" target="_self" method="post">
+        <div class="container">
+            <fieldset>
+            <legend>My calculator</legend>
+                
+                    <label> Number 1</label>
+                    <input type="number"  name="firstnumber" id="firstnumber" placeholder="Enter a number">
+                    <label> Operation</label>
+                    <select name="operation" id="operation">
+                        <option id="add">Addition (+)</option>
+                        <option id="subtract">Subtraction (-)</option>
+                        <option id="multiply">Multiplication (x)</option>
+                        <option id="divide">Division (/)</option>
+                    </select>
+                    <label> Number 2</label>
+                    <input type="number" name="secondnumber" id="secondnumber" placeholder="Enter another number">
+                    <button type="submit">Compute</button>
+            </fieldset> 
+        </div>
+    </form>
+</body>
+</html>
